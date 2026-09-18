@@ -6,19 +6,19 @@
 
 **AVIP 2026 — Full Stack Development, Task 2**
 
-[!\[Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js\&logoColor=white)](https://nodejs.org/)
-[!\[Express](https://img.shields.io/badge/Express-000000?logo=express\&logoColor=white)](https://expressjs.com/)
-[!\[MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb\&logoColor=white)](https://www.mongodb.com/)
-[!\[React](https://img.shields.io/badge/React-61DAFB?logo=react\&logoColor=black)](https://react.dev/)
-[!\[Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite\&logoColor=white)](https://vitejs.dev/)
-[!\[JWT](https://img.shields.io/badge/JWT-000000?logo=jsonwebtokens\&logoColor=white)](https://jwt.io/)
-[!\[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js\&logoColor=white)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-000000?logo=express\&logoColor=white)](https://expressjs.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb\&logoColor=white)](https://www.mongodb.com/)
+[![React](https://img.shields.io/badge/React-61DAFB?logo=react\&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite\&logoColor=white)](https://vitejs.dev/)
+[![JWT](https://img.shields.io/badge/JWT-000000?logo=jsonwebtokens\&logoColor=white)](https://jwt.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 
 A full-stack MERN application providing CRUD operations for employee records, with admin-only authentication guarding create/update/delete actions, and a responsive React frontend.
 
 </div>
 
-\---
+---
 
 ## 📋 Table of Contents
 
@@ -33,7 +33,7 @@ A full-stack MERN application providing CRUD operations for employee records, wi
 * [Screenshots](#screenshots)
 * [Deployment](#deployment)
 
-\---
+---
 
 ## <a id="tech-stack"></a>🛠️ Tech Stack
 
@@ -85,21 +85,21 @@ FSD\_2\_EmployeeManagementSystem\_BYTE/
 
 ## <a id="setup-instructions"></a>🚀 Setup Instructions
 
-### 1\. Backend
+### 1. Backend
 
 ```bash
 cd backend
 npm install
 cp .env.example .env
-# Edit .env: set `MONGO\_URI` and a strong `JWT\_SECRET`
-# `ADMIN\_EMAIL` / `ADMIN\_PASSWORD` control the seeded admin login
+# Edit .env: set `MONGO_URI` and a strong `JWT_SECRET`
+# `ADMIN_EMAIL` / `ADMIN_PASSWORD` control the seeded admin login
 npm run seed   # creates the admin account + 5 sample employees
 npm run dev
 ```
 
 Backend runs at `http://localhost:5001`.
 
-### 2\. Frontend
+### 2. Frontend
 
 ```bash
 cd frontend
@@ -149,9 +149,9 @@ Content-Type: application/json
 ### Create Employee — Sample Authenticated Request
 
 ```bash
-curl -X POST http://localhost:5001/api/employees \\
-  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIs..." \\
-  -H "Content-Type: application/json" \\
+curl -X POST http://localhost:5001/api/employees \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIs..." \
+  -H "Content-Type: application/json" \
   -d '{
     "firstName": "Maria",
     "lastName": "Silva",
@@ -169,7 +169,7 @@ curl -X POST http://localhost:5001/api/employees \\
 {
   "success": true,
   "message": "Employee created successfully",
-  "employee": { "\_id": "665f3...", "firstName": "Maria", "lastName": "Silva", "email": "maria.silva@company.com", "position": "QA Engineer", "department": "Engineering", "salary": 68000, "status": "active" }
+  "employee": { "_id": "665f3...", "firstName": "Maria", "lastName": "Silva", "email": "maria.silva@company.com", "position": "QA Engineer", "department": "Engineering", "salary": 68000, "status": "active" }
 }
 ```
 
@@ -237,17 +237,17 @@ Running `npm run seed` inserts 5 sample employees (Alice Johnson, Bilal Khan, Ch
 
 <br/><br/>
 
-<h3>Add / Create Employee</h3>
+<h3>Create Employee</h3>
 <img src="screenshots/create-employee.png" alt="Create employee form" width="700"/>
 
 <br/><br/>
 
-<h3>Add / Edit Employee</h3>
+<h3>Edit Employee</h3>
 <img src="screenshots/update-employee.png" alt="Edit employee form" width="700"/>
 
 <br/><br/>
 
-<h3>Delete EmployeeView</h3>
+<h3>Delete Employee</h3>
 <img src="screenshots/delete-employee.png" alt="Delete employee" width="400"/>
 
 </div>
@@ -256,9 +256,9 @@ Running `npm run seed` inserts 5 sample employees (Alice Johnson, Bilal Khan, Ch
 
 1. Push this repo to GitHub as **`FSD\_2\_EmployeeManagementSystem\_BYTE`** (public).
 2. Deploy `backend/` to **Render**, set env vars, and run the seed script once via Render's shell (or locally against the Atlas URI) to create the admin + sample data.
-3. Deploy `frontend/` to **Vercel**, setting `VITE\_API\_URL` to your live Render backend URL.
+3. Deploy `frontend/` to **Vercel**, setting `VITE_API_URL` to your live Render backend URL.
 
-\---
+---
 
 <div align="center">
 
