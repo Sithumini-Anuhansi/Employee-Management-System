@@ -1,10 +1,8 @@
 <div align="center">
 
-# 👥 FSD\_2\_EmployeeManagementSystem\_BYTE
+# 👥 Employee Management System
 
-### Employee Management System
-
-**AVIP 2026 — Full Stack Development, Task 2**
+### Full Stack Development
 
 [![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js\&logoColor=white)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-000000?logo=express\&logoColor=white)](https://expressjs.com/)
@@ -55,7 +53,7 @@ A full-stack MERN application providing CRUD operations for employee records, wi
 ## <a id="project-structure"></a>📁 Project Structure
 
 ```
-FSD\_2\_EmployeeManagementSystem\_BYTE/
+Employee-Management-System/
 ├── backend/
 │   ├── config/db.js
 │   ├── models/Admin.js
@@ -252,9 +250,9 @@ Running `npm run seed` inserts 5 sample employees (Alice Johnson, Bilal Khan, Ch
 
 </div>
 
-## <a id="deployment"></a> ☁️ Deployment (per AVIP guide)
+## <a id="deployment"></a> ☁️ Deployment
 
-1. Push this repo to GitHub as **`FSD\_2\_EmployeeManagementSystem\_BYTE`** (public).
+1. Push this repo to GitHub as **`Employee-Management-System`** (public).
 2. Deploy `backend/` to **Render**, set env vars, and run the seed script once via Render's shell (or locally against the Atlas URI) to create the admin + sample data.
 3. Deploy `frontend/` to **Vercel**, setting `VITE_API_URL` to your live Render backend URL.
 
@@ -262,7 +260,10 @@ Running `npm run seed` inserts 5 sample employees (Alice Johnson, Bilal Khan, Ch
 
 <div align="center">
 
-Built with 💙 for **AVIP 2026** · [B.Y.T.E by Arithmatrix](https://www.linkedin.com/)
+## 🤝 Connect & Contact
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sithumini-anuhansi-5b32a8334)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:anuhansisithumini@gmail.com)
 
 </div>
 
